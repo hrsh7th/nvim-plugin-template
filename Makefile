@@ -4,7 +4,7 @@ lint:
 
 .PHONY: test
 test:
-	vusted --output=gtest ./lua
+	vusted ./lua
 
 .PHONY: format
 format:
