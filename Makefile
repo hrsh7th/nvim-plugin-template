@@ -4,7 +4,7 @@ lint:
 
 .PHONY: test
 test:
-	vusted ./lua
+	vusted --output=gtest --pattern=.spec ./lua
 
 .PHONY: format
 format:
