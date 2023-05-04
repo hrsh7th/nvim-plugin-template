@@ -1,11 +1,11 @@
 local example = {
   ---@param name string
   hello = function(name)
-    print(name)
+    print('Hello, ' .. name .. '!')
   end
 }
 
-example.hello(1)
+example.hello('world')
 
 return example
 
