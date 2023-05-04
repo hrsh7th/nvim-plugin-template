@@ -45,7 +45,7 @@ jobs:
           luarocks install luacheck
           luarocks install vusted
 
-      - name: Rune type check
+      - name: Run type check
         if: matrix.os == 'ubuntu-latest'
         uses: mrcjkb/lua-typecheck-action@v0.1.2
         with:
@@ -61,7 +61,6 @@ jobs:
 
       - name: Run check
         run: |
-          make setup
           make check
 
       - name: Auto commit if needed
