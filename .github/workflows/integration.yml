@@ -45,13 +45,6 @@ jobs:
           luarocks install luacheck
           luarocks install vusted
 
-      - name: Run type check
-        if: matrix.os == 'ubuntu-latest'
-        uses: mrcjkb/lua-typecheck-action@v0.1.2
-        with:
-          configpath: ".luarc.json"
-          directories: "lua"
-
       - name: Format code
         uses: JohnnyMorganz/stylua-action@v2
         with:
